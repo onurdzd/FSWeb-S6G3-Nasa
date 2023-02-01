@@ -27,17 +27,9 @@ function App() {
 
   return (
     <div className="App">
-      <Header title={title} />
-      <p>
-        Discover the cosmos! Each day a different image or photograph of our
-        fascinating universe is featured, along with a brief explanation written
-        by a professional astronomer.
-        <span role="img" aria-label="go!">
-          🚀
-        </span>
-        !
-      </p>
+      <Header />
       <Main
+        title={title}
         url={url}
         date={date}
         explanation={explanation}
