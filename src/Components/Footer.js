@@ -1,12 +1,13 @@
 import React, { useState } from "react";
+import Button from "react-bootstrap/Button";
 
 const Footer = () => {
   const [menu, setMenu] = useState(["Ana Sayfa", "Hakkında", "İletişim"]);
   return (
-    <div>
+    <div className="container footer">
       {menu.map((item, key) => (
         <div key={key}>
-          <button>{item}</button>
+          <Button variant="warning">{item}</Button>
         </div>
       ))}
     </div>
