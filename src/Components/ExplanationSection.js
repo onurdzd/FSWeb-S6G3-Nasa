@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-const Baslik = styled.h4`
+export const Baslik = styled.h4`
   font-weight: 1000;
   font-size: 1.1rem;
-  color: ${(props) => (props.color ? props.color : "blue")};
+  color: ${(props) => (props.color ? props.color : "black")};
 `;
 
 const ExplanationSection = ({ copyright, explanation }) => {

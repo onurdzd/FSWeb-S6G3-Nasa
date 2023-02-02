@@ -1,23 +1,33 @@
 import React from "react";
 import ImgSection from "./ImgSection";
 import ExplanationSection from "./ExplanationSection";
+import styled from "styled-components";
+import { Baslik } from "./ExplanationSection";
+
+const StyledA = styled.a`
+  font-weight: 800;
+`;
+
+const StyledP = styled.p`
+  text-align: center;
+  padding-top: 1rem;
+  font-weight: 400;
+  color: black;
+`;
 
 const Main = (props) => {
   return (
     <div className="container">
-      <p>
-        <a
-          href="https://apod.nasa.gov/apod/archivepix.html"
-          className="App-link"
-        >
+      <StyledP>
+        <StyledA href="https://apod.nasa.gov/apod/archivepix.html">
           Discover the cosmos!{" "}
-        </a>
+        </StyledA>
         Each day a different image or photograph of our fascinating universe is
         featured, along with a brief explanation written by a professional
         astronomer.
-      </p>
-      <h4>{props.date}</h4>
-      <h3>{props.title} </h3>
+      </StyledP>
+      <Baslik>{props.date}</Baslik>
+      <Baslik>{props.title} </Baslik>
       <div className="section">
         <input
           value={props.dateValue}
